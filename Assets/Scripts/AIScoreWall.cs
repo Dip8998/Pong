@@ -10,7 +10,7 @@ public class AIScoreWall : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             // Score increment for enemy
-            ScoreIncrement.Instance.UpdateAIScore();
+            ScoreIncrement2.Instance.UpdateAIScore();
            
         }
         

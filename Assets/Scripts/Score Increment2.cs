@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class ScoreIncrement : MonoBehaviour
+public class ScoreIncrement2 : MonoBehaviour
 {
-    public static ScoreIncrement Instance;
+    public static ScoreIncrement2 Instance;
 
     [SerializeField] private TextMeshProUGUI _myScore;
     [SerializeField] private TextMeshProUGUI _aiScore;
@@ -36,7 +36,7 @@ public class ScoreIncrement : MonoBehaviour
         _myScore.text = _score.ToString();
         if (_score > 15)
         {
-            GameManager.Instance.GameOverForPlayer();
+            GameManager2.Instance.GameOverForPlayer();
             
         }
     }
@@ -46,7 +46,7 @@ public class ScoreIncrement : MonoBehaviour
         _aiScore.text = _ai.ToString();
         if (_ai > 15)
         {
-            GameManager.Instance.GameOverForEnemy();
+            GameManager2.Instance.GameOverForEnemy();
             
         }
     }

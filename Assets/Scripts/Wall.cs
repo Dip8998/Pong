@@ -10,7 +10,7 @@ public class Wall : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             // Score Increment for Player
-            ScoreIncrement.Instance.UpdateMyScore();
+            ScoreIncrement2.Instance.UpdateMyScore();
             
         }
         

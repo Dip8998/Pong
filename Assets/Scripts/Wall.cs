@@ -7,13 +7,19 @@ public class Wall : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ball"))
+        if (collision.gameObject.CompareTag("Ball1"))
         {
-            // Score Increment for Player
-            ScoreIncrement2.Instance.UpdateMyScore();
-            
+            // Score increment for enemy
+            ScoreIncrement.Instance.UpdateMyScore();
+
         }
-        
-       
+        if (collision.gameObject.CompareTag("Ball2"))
+        {
+            // Score increment for enemy
+            ScoreIncrement2.Instance.UpdateMyScore();
+
+        }
+
+
     }
 }
